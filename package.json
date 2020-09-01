@@ -1,31 +1,31 @@
 {
-  "name": "dat-link-resolve",
-  "description": "resolve urls, links to a dat key",
-  "version": "2.3.0",
+  "name": "dwebx-link-resolve",
+  "description": "resolve urls, links to a dwebx key",
+  "version": "1.0.0",
   "author": "Joe Hand <joe@hand.email>",
   "bugs": {
-    "url": "https://github.com/datproject/dat-link-resolve/issues"
+    "url": "https://github.com/distributedweb/dwebx-link-resolve/issues"
   },
   "devDependencies": {
     "standard": "^12.0.1",
     "tape": "^4.9.2"
   },
-  "homepage": "https://github.com/datproject/dat-link-resolve",
+  "homepage": "https://github.com/distributedweb/dwebx-link-resolve",
   "keywords": [
-    "dat"
+    "dwebx"
   ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/datproject/dat-link-resolve.git"
+    "url": "https://github.com/distributedweb/dwebx-link-resolve.git"
   },
   "scripts": {
     "test": "standard && tape test/*.js"
   },
   "dependencies": {
-    "dat-dns": "^3.0.2",
-    "dat-encoding": "^5.0.1",
+    "dwebx-dns": "git://github.com/DistributedWeb/dwebx-dns.git#4af4aabf06a38ed37b30bd752bdb2bb0aa9b41b4",
+    "dwebx-encoding": "git://github.com/DistributedWeb/dwebx-encoding.git#adbab1965b1152c3a7252ca01807e9744c713398",
     "debug": "^4.1.1",
     "simple-get": "^3.0.3"
   }
