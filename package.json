@@ -1,8 +1,8 @@
 {
   "name": "dwebx-link-resolve",
-  "description": "resolve urls, links to a dwebx key",
+  "description": "Module for resolving legacy dWeb keys.",
   "version": "1.0.0",
-  "author": "Joe Hand <joe@hand.email>",
+  "author": "Peeps Labs <peepslabs.gmail.com>",
   "bugs": {
     "url": "https://github.com/distributedweb/dwebx-link-resolve/issues"
   },
@@ -10,7 +10,7 @@
     "standard": "^12.0.1",
     "tape": "^4.9.2"
   },
-  "homepage": "https://github.com/distributedweb/dwebx-link-resolve",
+  "homepage": "https://dwebx.org",
   "keywords": [
     "dwebx"
   ],
