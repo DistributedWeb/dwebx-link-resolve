@@ -12,7 +12,7 @@ resolve urls, links to a dwebx key using common methods
 * URLs with keys in them (`dwebx.org/6161616161616161616161616161616161616161616161616161616161616161`)
 * `ddrive-key` or `dwebx-key` headers
 * Url to JSON http request that returns `{key: <dwebx-key>}`
-* DWebX-DNS resolution (via [dwebx-dns](https://github.com/datprotocol/dwebx-dns))
+* DWebX-DNS resolution (via [dwebx-dns](https://github.com/distributedweb/dwebx-dns ))
 
 ## Install
 
@@ -23,16 +23,16 @@ npm install dwebx-link-resolve
 ## Usage
 
 ```js
-var datResolve = require('dwebx-link-resolve')
+var dwebxResolve = require('dwebx-link-resolve')
 
-datResolve(link, function (err, key) {
+dwebxResolve(link, function (err, key) {
   console.log('found key', key)
 })
 ```
 
 ## API
 
-### `datResolve(link, callback(err, key))`
+### `dwebxResolve(link, callback(err, key))`
 
 Link can be string or buffer.
 
@@ -41,7 +41,7 @@ Resolution order:
 1. Validate buffers or any strings with 64 character hashes in them via [dwebx-encoding](https://github.com/juliangruber/dwebx-encoding)
 2. Check headers in http request
 3. Check JSON request response for `key`
-4. DWebX-DNS resolution via [dwebx-dns](https://github.com/datprotocol/dwebx-dns)
+4. DWebX-DNS resolution via [dwebx-dns](https://github.com/distributedweb/dwebx-dns )
 
 ## Refering to dvaults
 Trying to tighten up a bit dwebx-link-resolve (and its dependencies dwebx-dns and dwebx-decode). I am noticing a few inconsistencies as I'm writing dwebx-shell.
@@ -53,7 +53,7 @@ $ dwebx-shell dwebx://40a7f6b6147ae695bcbcff432f684c7bb5291ea339c28c1755896cdeb8
 
 and have it open the dwebx at version 5 and change directory to /path4.
 
-Currently ```dwebx-shell google-fonts-kewitz.hashbase.io/fonts/``` [fails somewhere in dwebx-link-resolve](https://github.com/millette/dwebx-shell/issues/5).
+Currently ```dwebx-shell google-fonts-kewitz.hashbase.io/fonts/``` [fails somewhere in dwebx-link-resolve](dwebx.dhosting.io).
 
 ### Examples
 Note that dwebx-link-resolve also supports other methods, such as detection of dwebx keys in paths and http headers.
